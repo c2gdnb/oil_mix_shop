@@ -1,0 +1,208 @@
+a:hover, button:hover, input[type="submit"]:hover {
+  -webkit-transition: all 0.8s ease;
+  -webkit-transition--moz-transition: all 0.8s ease;
+  -webkit-transition--o-transition: all 0 0.8s ease;
+  -webkit-transition-transition: all 0.8s ease;
+}
+
+button, input[type="submit"] {
+  cursor: pointer;
+}
+
+/*HEADER*/
+header {
+  min-height: 84px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.06);
+  position: relative;
+  padding: 0 130px;
+  z-index: 99;
+}
+
+header .logo {
+  float: left;
+  margin-top: 17px;
+}
+
+header .logo img {
+  height: 50px;
+}
+
+header .top-menu {
+  float: left;
+  margin-left: 50px;
+  margin-top: 40px;
+}
+
+header .top-menu li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+header .top-menu li a {
+  font-family: 'Arial';
+  color: #1a1a1a;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+header .top-menu li a:hover {
+  color: #ffba00;
+}
+
+header .top-menu li:last-child {
+  margin-right: 0;
+}
+
+header .basket {
+  float: right;
+  width: 249px;
+  height: 84px;
+  background-color: #2bb21d;
+}
+
+/*END HEADER*/
+/*LEFT MENU*/
+.left-menu-wrapper {
+  float: left;
+  width: 16.4142%;
+}
+
+.left-menu-wrapper ul {
+  width: 100%;
+}
+
+.left-menu-wrapper ul li {
+  display: table;
+  width: 100%;
+}
+
+.left-menu-wrapper ul li a {
+  font-family: 'Arial';
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  border-bottom: 1px solid #23a622;
+  display: block;
+  height: 86px;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 0px 0 40px;
+  position: relative;
+  background-color: #2bb21d;
+}
+
+.left-menu-wrapper ul li a i {
+  width: 58px;
+  height: 40px;
+  display: inline-block;
+  background: url("../images/icons-right-left-menu.png") no-repeat;
+  vertical-align: middle;
+  margin-right: 33px;
+  position: relative;
+}
+
+.left-menu-wrapper ul li a i.icon-left1 {
+  background-position: 0 5px;
+}
+
+.left-menu-wrapper ul li a i.icon-left2 {
+  background-position: 0 -83px;
+}
+
+.left-menu-wrapper ul li a i.icon-left3 {
+  background-position: 0 -171px;
+}
+
+.left-menu-wrapper ul li a i.icon-left4 {
+  background-position: 0 -260px;
+}
+
+.left-menu-wrapper ul li a i.icon-left5 {
+  background-position: 0 -346px;
+}
+
+.left-menu-wrapper ul li a i:before {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 1px;
+  height: 40px;
+  background-color: #23a622;
+  right: 0;
+}
+
+.left-menu-wrapper ul li a:hover {
+  background-color: #1e8c12;
+}
+
+/*END LEFT MENU*/
+/*MAIN SLIDER*/
+.main-slider-wrap {
+  width: 83.47%;
+  float: left;
+  margin-bottom: 70px;
+}
+
+.main-slider-wrap .bxslider li {
+  background: url("../images/slider-main-img.jpg") no-repeat top center;
+  background-size: cover;
+}
+
+.main-slider-wrap .bxslider li .slider-text {
+  float: right;
+  min-width: 300px;
+}
+
+.main-slider-wrap .bxslider li .slider-text .slider-text-inside {
+  padding-top: 110px;
+  padding-right: 50px;
+}
+
+.main-slider-wrap .bxslider li .slider-text .slider-text-inside .title {
+  font-family: 'Arial-Black';
+  font-size: 80px;
+  color: #1a1a1a;
+  background: url("../images/spot.png") no-repeat;
+  background-position: 0 10px;
+  text-align: center;
+  background-size: 100%;
+}
+
+.main-slider-wrap .bxslider li .slider-text .slider-text-inside .sub-title {
+  font-family: 'Arial-Black';
+  color: #1a1a1a;
+  font-size: 16px;
+  margin: 20px 0;
+  padding-left: 55px;
+}
+
+.main-slider-wrap .bxslider li .slider-text .slider-text-inside li {
+  background: none;
+  color: #1a1a1a;
+  font-family: 'Arial';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 47px;
+  height: auto !important;
+  padding-left: 55px;
+}
+
+.main-slider-wrap .bxslider li .slider-text .slider-text-inside hr {
+  background-color: #1a1a1a;
+  height: 2px;
+  border: none;
+  outline: none;
+  width: 198px;
+  float: right;
+  margin: 8px 0;
+}
+
+.main-slider-wrap .bxslider li .slider-text .slider-text-inside .total-weight {
+  font-family: 'Arial-Black';
+  color: #1a1a1a;
+  font-size: 16px;
+  clear: both;
+  padding-left: 55px;
+}
+
+/*END MAIN SLIDER*/
