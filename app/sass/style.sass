@@ -102,11 +102,27 @@ header
 .main-slider-wrap
 	width: 83.47%
 	float: left
-	margin-bottom: 70px
+	.bx-wrapper
+		margin-bottom: 70px !important
 	.bxslider
 		li
-			background: url('../images/slider-main-img.jpg')no-repeat top center
 			background-size: cover
+			&.first-slide
+				background: url('../images/slider-main-img1.jpg')no-repeat center
+			&.second-slide
+				background: url('../images/slider-main-img2.jpg')no-repeat center
+			&.third-slide
+				background: url('../images/slider-main-img3.jpg')no-repeat center
+			&.four-slide
+				background: url('../images/slider-main-img4.jpg')no-repeat center
+			&.five-slide
+				background: url('../images/slider-main-img5.jpg')no-repeat center
+			&.six-slide
+				background: url('../images/slider-main-img6.jpg')no-repeat center
+			&.seven-slide
+				background: url('../images/slider-main-img7.jpg')no-repeat center
+			&.eight-slide
+				background: url('../images/slider-main-img8.jpg')no-repeat center
 			.slider-text
 				float: right
 				min-width: 300px
@@ -121,7 +137,6 @@ header
 						background-position: 0 10px
 						text-align: center
 						background-size: 100%
-
 					.sub-title
 						font-family: 'Arial-Black'
 						color: #1a1a1a
@@ -143,8 +158,8 @@ header
 						border: none
 						outline: none
 						width: 198px
-						float: right
-						margin: 8px 0
+						float: left
+						margin-left: 55px
 					.total-weight
 						font-family: 'Arial-Black'
 						color: #1a1a1a
@@ -153,3 +168,136 @@ header
 						padding-left: 55px
 
 /*END MAIN SLIDER*/
+/*MAIN CONTENT*/
+.video-block
+	margin: 0 auto 0px auto
+	position: relative
+	display: block
+	text-align: center
+	&:before
+		@include absolute
+		width: 859px
+		height: 52px
+		background: url('../images/shadow.png')no-repeat
+		margin: 0 auto
+		left: -38px
+		right: 0
+		bottom: -47px
+.collection-title
+	font-family: 'Arial-Black'
+	font-size: 18px
+	color: #c5c5c5
+	text-transform: uppercase
+	text-align: center
+	margin-bottom: 40px
+.collection-wrap
+	background: url('../images/collection-bg.jpg')no-repeat
+	padding-top: 120px
+	min-height: 689px
+	box-sizing: border-box
+	.collection-slider
+		padding: 0 130px
+		.bx-wrapper 
+			.bx-controls-direction 
+				a
+					width: 64px
+					height: 20px
+					&.bx-prev
+						background: url('../images/arrow_left.png')no-repeat
+						left: -54px
+					&.bx-next
+						background: url('../images/arrow_right.png')no-repeat
+						right: -42px
+		.collection-blocks
+			width: 21.4%
+			margin-right: 30px
+			float: left
+			box-sizing: border-box
+			&:nth-child(1)
+				.collection-blocks-inside
+					&:before
+						background-color: #ffff00
+			&:nth-child(2)
+				.collection-blocks-inside
+					&:before
+						background-color: #f7941d
+			&:nth-child(3)
+				.collection-blocks-inside
+					&:before
+						background-color: #ff0000
+			&:nth-child(4)
+				.collection-blocks-inside
+					&:before
+						background-color: #39b54a
+			.collection-blocks-inside
+				border-radius: 3px
+				box-shadow: 0 0 12px rgba(0, 0, 0, 0.08)
+				min-height: 353px
+				position: relative
+				z-index: 99
+				margin-bottom: 27px
+				&:before
+					@include absolute
+					width: 55px
+					height: 4px
+					left: 0
+					right: 0
+					bottom: -3px
+					margin: 0 auto
+				.open-modal
+					float: right
+					display: block
+					width: 31px
+					height: 30px
+					background: url('../images/icon-modal.png')no-repeat
+					margin-top: 24px
+					margin-right: 24px
+				.main-img
+					margin: auto
+				.rating-stars
+					margin-left: 20px
+					a
+						display: inline-block
+						width: 14px
+						height: 13px
+						background: url('../images/stars-rate.png')no-repeat
+						&.golden-star
+							background-position: 0 0
+						&.grey-star
+							background-position: -17px 0
+				.info-collection
+					padding: 0 20px
+					font-family: 'Arial'
+					font-size: 14px
+					color: #1a1a1a
+					margin-top: 20px
+					.l-info
+						float: left
+						span
+							font-family: 'Arial-BoldMT'
+					.r-info
+						float: right
+						font-family: 'Arial-BoldMT'
+			.collection-blocks-outside
+				padding: 0
+				.button-fav
+					float: left
+					padding: 0 24px
+					border-left: 1px solid #e6e6e6
+					border-right: 1px solid #e6e6e6
+					.add-fav
+						width: 23px
+						height: 19px
+						background: url('../images/add-fav.png')no-repeat
+						display: block
+				.add-to-basket
+					float: right
+					font-family: 'Rubik-Black'
+					font-size: 11px
+					color: #1a1a1a
+					text-transform: uppercase
+					text-decoration: none
+					margin-top: 5px
+					&:hover
+						color: #ffd154
+/*END MAIN CONTENT*/
