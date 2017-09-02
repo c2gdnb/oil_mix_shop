@@ -5,6 +5,10 @@ $(document).ready(function(){
 	$('.bxslider-2').bxSlider({
 		pager: false
 	});
+	$('.bxslider-3').bxSlider({
+		pager: false
+	});
+
 
 	function heightDetect() {
 		$(".main-s .bx-viewport, .bxslider li").css("height", $(window).height()-84);
