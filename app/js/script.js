@@ -11,7 +11,7 @@ $(document).ready(function(){
 
 
 	function heightDetect() {
-		$(".main-s .bx-viewport, .bxslider li").css("height", $(window).height()-84);
+		$(".main-s .bx-viewport, .bxslider li, .main-catalog-bg").css("height", $(window).height()-84);
 	};
 	heightDetect();
 	$(window).resize(function() {

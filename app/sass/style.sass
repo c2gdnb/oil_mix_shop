@@ -15,6 +15,10 @@ a,button,input[type="submit"]
 
 button,input[type="submit"]
 	cursor: pointer
+body
+	font-family: 'Arial'
+	font-size: 14px
+	color: #1a1a1a
 /*HEADER*/
 header
 	min-height: 84px
@@ -125,7 +129,7 @@ header
 					display: inline-block
 					background: url('../images/icons-right-left-menu.png')no-repeat
 					vertical-align: middle
-					margin-right: 33px
+					margin-right: 20px
 					position: relative
 					&.icon-left1
 						background-position: 0 5px
@@ -170,6 +174,8 @@ header
 				left: 130%
 				top: 0px
 				width: 240px
+				border-right: none
+				border: 1px solid #f2f2f2
 				li
 					a
 						background-color: #FFF
@@ -178,63 +184,64 @@ header
 						color: #1a1a1a
 						font-family: 'Arial'
 						font-size: 12px
-						padding: 0 20px;
+						padding: 0 20px
 						&:hover
 							background-color: #ffba00
 							color: #fff
 						&:before
 							display: none
-	.contacts-left-wrap
-		text-align: center
-		.contacts-left-title
+.contacts-left-wrap,
+.contacts-wrap
+	text-align: center
+	.contacts-left-title
+		color: #1a1a1a
+		font-family: 'Arial-Black'
+		font-size: 18px
+		text-transform: uppercase
+		margin-top: 60px
+	.contacts-left-block
+		margin-top: 45px
+		.contacts-left-block-title
 			color: #1a1a1a
-			font-family: 'Arial-Black'
-			font-size: 18px
-			text-transform: uppercase
-			margin-top: 60px
-		.contacts-left-block
-			margin-top: 45px
-			.contacts-left-block-title
-				color: #1a1a1a
-				font-family: 'Arial'
-				font-size: 14px
-				margin-bottom: 15px
-			.contacts-left-block-phone
-				font-family: 'Arial-BoldMT'
-				color: #1a1a1a
-				font-size: 22px
-				margin-bottom: 6px
-			.contacts-left-block-mail
-				font-family: 'Arial-BoldMT'
-				color: #1a1a1a
-				font-size: 22px
-				border-bottom: 1px dotted #1a1a1a
-				text-decoration: none
-				display: inline-block
-			.contacts-left-block-link
-				color: #ffba00
+			font-family: 'Arial'
+			font-size: 14px
+			margin-bottom: 15px
+		.contacts-left-block-phone
+			font-family: 'Arial-BoldMT'
+			color: #1a1a1a
+			font-size: 22px
+			margin-bottom: 6px
+		.contacts-left-block-mail
+			font-family: 'Arial-BoldMT'
+			color: #1a1a1a
+			font-size: 22px
+			border-bottom: 1px dotted #1a1a1a
+			text-decoration: none
+			display: inline-block
+		.contacts-left-block-link
+			color: #ffba00
 				font-size: 12px
-				font-family: 'Arial'
-				border-bottom: 1px dotted #ffba00
+			font-family: 'Arial'
+			border-bottom: 1px dotted #ffba00
+			display: inline-block
+			text-decoration: none
+		.social-wrap
+			a
 				display: inline-block
-				text-decoration: none
-			.social-wrap
-				a
-					display: inline-block
-					width: 24px
-					height: 24px
-					background: url('../images/social.png')no-repeat
-					margin: 0 10px
-					&.facebook
-						background-position: 6px 2px
-					&.instagram
-						background-position: -38px 2px
-					&.youtube
-						background-position: -91px 2px
-					&.twitter
-						background-position: -145px 2px
-					&.odnoklasniki
-						background-position: -195px 2px
+				width: 24px
+				height: 24px
+				background: url('../images/social.png')no-repeat
+				margin: 0 10px
+				&.facebook
+					background-position: 6px 2px
+				&.instagram
+					background-position: -38px 2px
+				&.youtube
+					background-position: -91px 2px
+				&.twitter
+					background-position: -145px 2px
+				&.odnoklasniki
+					background-position: -195px 2px
 /*END LEFT MENU*/
 /*MAIN SLIDER*/
 .main-slider-wrap
@@ -328,7 +335,8 @@ header
 	text-transform: uppercase
 	text-align: center
 	margin-bottom: 40px
-.collection-wrap
+.collection-wrap,
+.catalog-page-wrap
 	background: url('../images/collection-bg.jpg')no-repeat
 	padding-top: 120px
 	box-sizing: border-box
@@ -345,7 +353,8 @@ header
 					&.bx-next
 						background: url('../images/arrow_right.png')no-repeat
 						right: -42px
-		.collection-blocks
+		.collection-blocks,
+		.catalog-block
 			width: 21.4%
 			margin-right: 30px
 			float: left
@@ -585,7 +594,7 @@ header
 			text-align: center
 		ul
 			display: inline-block
-			margin: 0 60px
+			margin: 0 42px
 			li
 				margin-bottom: 11px
 				a
@@ -603,4 +612,361 @@ header
 		bottom: 20px
 		left: 10px
 /*END FOOTER*/
+/*CATALOG ITEMS*/
+.breadcrumbs
+	margin: 38px 0 38px 38px
+	li
+		color: #ffba00
+		font-size: 14px
+		font-family: 'Arial'
+		display: inline-block
+		span
+			margin: 0 4px
+			color: #1a1a1a
+		a
+			color: #1a1a1a
+			text-decoration: none
+			&:hover
+				text-decoration: underline
+.catalog-page-wrap
+	padding-top: 0
+	.catalog-block
+		margin-bottom: 49px
+		.collection-blocks-inside
+			img
+				margin: auto
+				display: block
+	.collection-slider
+		padding: 0 70px
+/*END CATALOG ITEMS*/
+/*CATALOG ITEMS PAGE*/
+.main-catalog-bg
+	background-size: 100% !important
+	.main-slider-wrap-info
+		width: 314px
+		min-height: 320px
+		background-color: white
+		border-radius: 4px
+		box-shadow: 0 0 18px rgba(0, 0, 0, 0.07)
+		float: right
+		margin-top: 50px
+		margin-right: 130px
+		padding: 15px
+		box-sizing: border-box
+		.main-slider-wrap-info-title
+			text-align: center
+			color: #1a1a1a
+			font-family: Arial
+			font-size: 14px
+			font-family: 'Arial-Black'
+			text-transform: uppercase
+			margin-top: 30px
+			margin-bottom: 15px
+		.rating-stars
+			clear: both
+			a
+				display: inline-block
+				width: 14px
+				height: 13px
+				background: url('../images/stars-rate.png')no-repeat
+				&.golden-star
+					background-position: 0 0
+				&.grey-star
+					background-position: -17px 0
+		.main-slider-wrap-info-status
+			color: #cacaca
+			font-family: 'Arial-BoldMT'
+			font-size: 12px
+			float: right
+			margin-top: 50px
+		.main-slider-wrap-info-price
+			font-family: 'Arial-Black'
+			font-size: 60px
+			color: #1a1a1a
+			margin: 20px 0
+			span
+				font-size: 24px
+		.main-slider-wrap-info-buttons
+			.add-fav
+				width: 62px
+				height: 56px
+				background: #2bb21d url('../images/fav.png')no-repeat 50%
+				border-radius: 4px
+				display: inline-block
+				vertical-align: top
+			.buy
+				width: 217px
+				height: 56px
+				background-color: #ffba00
+				border-radius: 4px
+				display: inline-block
+				font-family: 'Arial-Black'
+				font-size: 12px
+				color: #fff
+				text-transform: uppercase
+				text-decoration: none
+				line-height: 56px
+				text-align: center
+				margin-left: 1px
+.main-catalog-tabs
+	padding-left: 130px
+	margin-top: 50px
+	margin-bottom: 50px
+	.korpus > div, .korpus > input  
+		display: none 
+		text-align: left
+		margin-top: 50px
+	.korpus label  
+		cursor: pointer 
+		position: relative 
+		text-transform: uppercase
+		font-family: 'Arial-Black'
+		font-size: 12px
+		color: #1a1a1a
+		margin-right: 160px
+		&:nth-child(6)
+			margin-right: 0
+	.korpus input[type="radio"]:checked + label  
+		color: #ffba00
+
+	.korpus > input:nth-of-type(1):checked ~ div:nth-of-type(1),
+	.korpus > input:nth-of-type(2):checked ~ div:nth-of-type(2),
+	.korpus > input:nth-of-type(3):checked ~ div:nth-of-type(3)  
+		display: block 
+	.feature
+		padding-right: 130px
+		ul
+			li
+				margin-bottom: 25px
+				.left-col
+					font-family: 'Arial-BoldMT'
+					font-size: 14px
+					color: #1a1a1a
+					display: inline-block
+					vertical-align: middle
+					width: 290px
+					line-height: 24px
+					i
+						display: inline-block
+						vertical-align: top
+						width: 16px
+						height: 17px
+						background: url('../images/feature_icons.png')no-repeat
+						margin-right: 10px
+						position: relative
+						top: 5px
+						&.feature-icon1
+							background-position: 0 0
+						&.feature-icon2
+							background-position: 0 -32px
+						&.feature-icon3
+							background-position: 0 -69px
+						&.feature-icon4
+							background-position: 0 -133px
+						&.feature-icon5
+							background-position: 0 -169px
+						&.feature-icon6
+							background-position: 0 -209px
+						&.feature-icon7
+							background-position: 0 -299px
+						&.feature-icon8
+							background-position: 0 -358px
+				.right-col
+					font-family: 'Arial'
+					font-size: 14px
+					color: #1a1a1a
+					display: inline-block
+					vertical-align: top
+					width: 70%
+					line-height: 24px
+		.feature-text
+			color: #1a1a1a
+			font-family: 'Arial'
+			font-size: 14px
+			line-height: 24px
+			strong
+				font-weight: 700
+	.product
+		padding-right: 130px
+		.product-tite,
+		.product-tite-yellow
+			font-family: 'Arial-Black'
+			color: #1a1a1a
+			font-size: 14px
+			text-transform: uppercase
+			margin-bottom: 25px
+		.product-tite-yellow
+			color: #ffba00
+		p
+			font-family: 'Arial'
+			color: #1a1a1a
+			font-size: 14px
+			line-height: 24px
+			margin-bottom: 20px
+		ul
+			margin-bottom: 25px
+			li
+				font-family: 'Arial'
+				color: #1a1a1a
+				font-size: 14px
+				padding-left: 27px
+				position: relative
+				margin-bottom: 10px
+				&:before
+					@include absolute
+					width: 4px
+					height: 4px
+					background-color: #323232
+					border-radius: 50%
+					left: 0
+					top: 5px
+	.reviews
+		.reviews-block
+			padding-right: 130px
+			margin-bottom: 50px
+			.reviews-block-icon
+				float: left
+				width: 46px
+				height: 34px
+				background: url('../images/quote.png')no-repeat
+				background-size: 100% 100%
+				margin-right: 50px
+			.reviews-block-text
+				float: left
+				width: 89%
+				.reviews-block-author
+					margin-bottom: 20px
+					font-family: 'Arial-BoldMT'
+					font-size: 16px
+					color: #1a1a1a
+					.rating-stars
+						clear: both
+						display: inline-block
+						margin-left: 30px
+						a
+							display: inline-block
+							width: 14px
+							height: 13px
+							background: url('../images/stars-rate.png')no-repeat
+							&.golden-star
+								background-position: 0 0
+							&.grey-star
+								background-position: -17px 0
+				p
+					font-family: 'Arial'
+					font-size: 14px
+					color: #1a1a1a
+					line-height: 27px
+				&:last-child
+					margin-bottom: 90px
+		.review-form
+			background-color: #fafafa
+			padding-top: 77px
+			padding-right: 160px
+			form
+				float: right
+				width: 467px
+				.review-form-title
+					margin-left: 34px
+					font-family: 'Arial-Black'
+					font-size: 14px
+					text-transform: uppercase
+					color: #1a1a1a
+					margin-bottom: 25px
+				.review-form-input
+					color: #1a1a1a
+					font-size: 14px
+					font-family: 'Arial'
+					padding-left: 35px
+					box-sizing: border-box
+					width: 100%
+					height: 62px
+					box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.07)
+					border-radius: 3px
+					border: 1px solid #cdcdcd
+					background-color: #ffffff
+					outline: none
+					margin-bottom: 14px
+				.review-form-text
+					color: #1a1a1a
+					font-size: 14px
+					font-family: 'Arial'
+					padding-left: 35px
+					box-sizing: border-box
+					width: 100%
+					height: 310px
+					box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.07)
+					border-radius: 3px
+					border: 1px solid #cdcdcd
+					background-color: #ffffff
+					outline: none
+					margin-bottom: 14px
+					padding-top: 35px
+					resize: none
+				.rate-review
+					.rating-stars
+						clear: both
+						display: inline-block
+						margin-right: 30px
+						a
+							display: inline-block
+							width: 14px
+							height: 13px
+							background: url('../images/stars-rate.png')no-repeat
+							&.golden-star
+								background-position: 0 0
+							&.grey-star
+								background-position: -17px 0
+				.upload-photo
+					text-align: center
+					margin-top: 30px
+					margin-bottom: 30px
+					a
+						display: block
+						width: 51px
+						height: 51px
+						background: url('../images/upload.png')no-repeat
+						margin:  0 auto 20px auto
+				.review-form-submit
+					width: 100%
+					height: 52px
+					border-radius: 5px
+					background-color: #ffba00
+					color: #fff
+					font-family: 'Arial-Black'
+					font-size: 12px
+					color: #fff
+					text-align: center
+					border: none
+					text-transform: uppercase
+.show-more-title
+	font-family: 'Arial-Black'
+	margin-left: 70px
+	margin-bottom: 50px
+	clear: both
+/*END CATALOG ITEMS PAGE*/
+/*CONTACTS*/
+.contacts-bg
+	width: 100%
+	height: 270px
+	background: url("../images/contacts-bg.png")no-repeat center
+	background-size: cover
+.contacts-wrap
+	padding: 80px 130px
+	text-align: left
+	.contacts-text
+		width: 440px
+		float: left
+	.contacts-left-title
+		margin-top: 0
+		font-size: 24px
+	p
+		font-family: 'Arial'
+		color: #3d3d3d;
+		line-height: 22px
+#map
+	width: 58%
+	height: 382px
+	float: right
+/*END CONTACTS*/
 @import "_media"
